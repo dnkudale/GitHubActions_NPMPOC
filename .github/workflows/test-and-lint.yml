@@ -15,7 +15,7 @@ jobs:
       - name: Remove package-lock.json
         run: rm package-lock.json
       - name: Install dependencies
-        run: npm ci
+        run: npm install --save-dev
       - name: Grant write permissions to node_modules (if necessary)
         run: chmod -R u+rwx /home/runner/work/GitHubActions_NPMPOC/GitHubActions_NPMPOC
       - name: Switch to new user
