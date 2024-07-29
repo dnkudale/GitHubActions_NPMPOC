@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install --save-dev
       - name: Grant write permissions to node_modules (if necessary)
-        run: chown -R myuser:/
+        run: sudo chown -R myuser:/
       - name: Switch to new user
         run: su myuser -s /bin/bash -c "npm test"
 
