@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: npm install --save-dev
       - name: Grant write permissions to node_modules (if necessary)
-        run: chmod -R u+rwx /
+        run: pwd
       - name: Switch to new user
         run: npm test
 
