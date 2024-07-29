@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm install --save-dev
+        run: npm install --save-dev eslint jest
       - name: Grant write permissions to node_modules (if necessary)
         run: chmod -R u+rwx /home/runner/work/GitHubActions_NPMPOC/GitHubActions_NPMPOC
       - name: Switch to new user
