@@ -17,7 +17,7 @@
     "url": "https://github.com/dnkudale/GitHubActions_NPMPOC/issues"
   },
   "homepage": "https://github.com/dnkudale/GitHubActions_NPMPOC#readme",
-  "devDependencies": {
+  "dependencies": {
     "eslint": "^9.8.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "jest": "^29.7.0"
