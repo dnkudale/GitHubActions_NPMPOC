@@ -14,14 +14,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Create a new user
-        run: |
-          useradd myuser
-          echo "myuser_password" | passwd --stdin myuser
       - name: Install dependencies
         run: npm install --save-dev
       - name: Grant write permissions to node_modules (if necessary)
-        run: sudo chown -R myuser:/
+        run: chmod -R u+rwx /
       - name: Switch to new user
-        run: su myuser -s /bin/bash -c "npm test"
+        run: npm test
 
