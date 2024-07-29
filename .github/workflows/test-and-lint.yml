@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Print working directory
-        run: "Working directory: $(pwd)"
+        run: pwd
       - name: List file permissions
         run: ls -la
       - name: Run tests
