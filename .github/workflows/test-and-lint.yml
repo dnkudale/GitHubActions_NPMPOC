@@ -18,6 +18,8 @@ jobs:
         run: pwd
       - name: List file permissions
         run: ls -la
+      - name: Grant write permissions to node_modules
+        run: chmod -R u+w node_modules
       - name: Run tests
         run: npm test
       - name: Lint code
